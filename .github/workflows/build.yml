@@ -32,3 +32,4 @@ jobs:
                   publish_dir: ./_site
                   external_repository: corylus-git/corylus-git.github.io
                   deploy_key: ${{ secrets.DEPLOY_TOKEN }}
+                  cname: corylus.dev
