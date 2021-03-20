@@ -12,7 +12,7 @@
             <ul>
                 <li class="{{'active' if page.url == '/'}}">{% if page.url != '/' %}<a href="{{'/'|url}}">/</a>{%else%}/{%endif%}</li>
                 <li class="{{'active' if page.url == '/download/'}}">{% if page.url != '/download/' %}<a href="{{'/download/'|url}}">Download</a>{%else%}Download{%endif%}</li>
-                <li class="{{'active' if page.url == '/doc/'}}">{% if page.url != '/doc/' %}<a href="{{'/doc/'|url}}">Docs</a>{%else%}Docs{%endif%}</li>
+                <li class="{{'active' if page.url == '/docs/'}}">{% if page.url != '/docs/' %}<a href="{{'/docs/'|url}}">Docs</a>{%else%}Docs{%endif%}</li>
                 <li class="{{'active' if page.url == '/changelog/'}}">{% if page.url != '/changelog/' %}<a href="{{'/changelog/' | url}}">Changelog</a>{%else%}Changelog{%endif%}</li>
                 <li><a href="{% website %}">Code <img src="{{ '/img/GitHub-Mark-Light-32px.png' | url}}"  style="width: 1em" alt="The GitHub logo"></a></li>
             </ul>
