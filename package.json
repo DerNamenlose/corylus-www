@@ -1,19 +1,19 @@
 {
-  "name": "corylus.dev",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "markdown-it-emoji": "^2.0.0"
-  },
-  "dependencies": {
-    "@11ty/eleventy-img": "^0.8.2"
-  }
+    "name": "corylus.dev",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "npx eleventy"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.12.1",
+        "markdown-it-emoji": "^2.0.0"
+    },
+    "dependencies": {
+        "@11ty/eleventy-img": "^0.8.2"
+    }
 }
