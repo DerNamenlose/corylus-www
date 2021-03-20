@@ -4,7 +4,7 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Corylus</title>
+        <title>Corylus{% if title %} - {{title}}{% endif %}</title>
         <link rel="stylesheet" href="{{ '/corylus.css' | url }}"/>
     </head>
     <body>
@@ -14,11 +14,13 @@
                 <li class="{{'active' if page.url == '/download/'}}">{% if page.url != '/download/' %}<a href="{{'/download/'|url}}">Download</a>{%else%}Download{%endif%}</li>
                 <li class="{{'active' if page.url == '/doc/'}}">{% if page.url != '/doc/' %}<a href="{{'/doc/'|url}}">Docs</a>{%else%}Docs{%endif%}</li>
                 <li class="{{'active' if page.url == '/changelog/'}}">{% if page.url != '/changelog/' %}<a href="{{'/changelog/' | url}}">Changelog</a>{%else%}Changelog{%endif%}</li>
-                <li><a href="{{'https://github.com/DerNamenlose/corylus'|url}}">Code <img src="{{ '/img/GitHub-Mark-Light-32px.png' | url}}"  style="width: 1em" alt="The GitHub logo"></a></li>
+                <li><a href="{% website %}">Code <img src="{{ '/img/GitHub-Mark-Light-32px.png' | url}}"  style="width: 1em" alt="The GitHub logo"></a></li>
             </ul>
         </nav>
         <main>
-            <h1>{{title}}</h1>
+            {% if title %}
+                <h1>{{title}}</h1>
+            {% endif %}
             {{content | safe}}
         </main>
     </body>

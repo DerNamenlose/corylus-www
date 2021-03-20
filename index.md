@@ -1,7 +1,7 @@
 ---
-title: Corylus
 layout: corylus.njk
 ---
+# Corylus
 *Git, but a little bit easier*
 
 ## About
@@ -14,5 +14,5 @@ and flexibility of Git without having to remember CLI commands.
 ## Contribute
 
 Corylus is Open Source software developed in HTML and TypeScript on the Electron
-platform. If that sounds appealing to you, head over to [GitHub](https://github.com/DerNamenlose/corylus)
+platform. If that sounds appealing to you, head over to [GitHub]({%website%})
 to see how you can help out. 
