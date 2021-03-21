@@ -4,9 +4,9 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.setTemplateFormats(['md', 'css']);
 
     eleventyConfig.addLiquidShortcode('website', function () {
-        return 'https://github.com/corylus/corylus';
+        return 'https://github.com/corylus-git/corylus';
     });
     eleventyConfig.addNunjucksShortcode('website', function () {
-        return 'https://github.com/corylus/corylus';
+        return 'https://github.com/corylus-git/corylus';
     });
 };
