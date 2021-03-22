@@ -2,4 +2,4 @@
 title: Download
 layout: corylus.njk
 ---
-Download the stuff...
+For the most current version please have a look at the [Github releases page](https://github.com/corylus-git/corylus/releases/).
