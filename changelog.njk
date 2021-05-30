@@ -1,0 +1,17 @@
+---
+layout: corylus.njk
+title: Changelog
+---
+<main>
+  <div>
+    {{ content | safe }}
+  </div>
+  <div>
+    {% for release in releases %}
+      <h2><span class="release-tag">{{ release.tag_name }}</span> {{ release.name }}</h2>
+      <p>
+      {{ release.body_markdown | safe}}
+      </p>
+    {% endfor %}
+  </div>
+</main>

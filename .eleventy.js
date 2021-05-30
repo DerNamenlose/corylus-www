@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('img');
     eleventyConfig.addPassthroughCopy('fonts');
-    eleventyConfig.setTemplateFormats(['md', 'css']);
+    eleventyConfig.setTemplateFormats(['njk', 'md', 'css']);
 
     eleventyConfig.addLiquidShortcode('website', function () {
         return 'https://github.com/corylus-git/corylus';

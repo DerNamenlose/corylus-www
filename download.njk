@@ -1,0 +1,19 @@
+---
+title: Download
+layout: corylus.njk
+---
+<main>
+    <h2>Current release</h2>
+    <p>
+        The current release is version {{ releases[0].tag_name }}
+    </p>
+    <p>
+        Download 
+            [<a href="{{ releases[0].linux_download_url }}">Linux</a>], 
+            [<a href="{{ releases[0].windows_download_url }}">Windows</a>] or 
+            [<a href="{{ releases[0].zipball_url }}">source code</a>]
+    </p>
+    <p>
+    For older versions please have a look at the <a href="https://github.com/corylus-git/corylus/releases/">Github releases page</a>.
+    </p>
+</main>
